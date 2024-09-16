@@ -25,3 +25,22 @@ body {
     text-wrap: balance;
   }
 }
+
+  .grid > div {
+    grid-row: var(--r);
+    grid-column: var(--c);
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 2s ease-in-out;
+  }
+  .animate-slideIn {
+    animation: slideIn 2s ease-in-out;
+  }
